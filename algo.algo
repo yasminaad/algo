@@ -1,0 +1,32 @@
+ALGORITHM checkpt
+var
+  P:String
+  i:INTEGER :=0;
+  wd:INTEGER :=0;
+  vo:INTEGER:=0;
+  car: INTEGER:=0;
+BEGIN 
+  
+    Read(p);
+      WHILE (p[i] <> '.') DO
+       if(p[i]=' ')then 
+         wd=wd+1;
+      END_IF
+       if(p[i]in ['a','e','u','i','o'])then
+        vo=vo+1;
+      END_IF;
+      IF (p[i]<>' ') THEN
+        car=car+1;
+      END_IF
+
+        car=i+1;
+        
+      END_WHILE
+      
+      
+    Write(p);
+    Write(wd);
+    Write(vo);
+    Write(car);
+
+    END
